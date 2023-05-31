@@ -30,4 +30,4 @@ Technologies utilisées :
 - Le vétérinaire peut avoir accès à ses informations et les modifier: adresse, numéro de téléphone, horaires d’ouverture, moyens de paiement .
 - Possibilité de noter des rappels: texte libre avec date et heure.
 
-![MaquetteProfilChienDetaille.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43a33b86-869a-4050-8f6e-9403efaaf161/MaquetteProfilChienDetaille.jpg)
+
