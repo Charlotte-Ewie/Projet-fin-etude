@@ -1,0 +1,45 @@
+@use "../../styles/vars";
+
+.component-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.add-companion-container {
+    flex-grow: 1;
+    background: url('/images/Addcompanion.jpg') no-repeat center/cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+}
+
+.add-companion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$lightColorOpacity;
+    width: 100%;
+    height: 100%;
+}
+
+.add-companion-inputs {
+    background-color: vars.$lightColorOpacity;
+    height: 600px;
+    padding: 2rem;
+    border-radius: 10px;
+
+    & h2 {
+        margin: 2rem 0 0
+    }
+}
+
+.form-add-companion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

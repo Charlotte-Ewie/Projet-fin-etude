@@ -1,0 +1,147 @@
+@use 'src/styles/vars';
+
+// Style du composant global de la page AccountEdit
+// .profil {
+
+//   // margin-right: 2rem;
+// }
+
+.accountEdit {
+  display: flex;
+  flex-direction: column;
+  background: url('/images/accountEdit.jpg') no-repeat center/cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 100%;
+
+  & .reminders {
+    background-color: vars.$lightColorOpacity;
+
+  
+    & .reminders-item {
+      box-shadow: none;
+      background-color: vars.$lightColor;
+    }
+  }
+
+  & .profil {
+    background-color: vars.$lightColorOpacity;
+    
+    flex-grow: 1;
+    padding: 5rem;
+
+
+    // & .input-container {
+    //   background-color: vars.$lightColorOpacity;
+    //   padding: 1rem;
+    //   margin: 1rem;
+    //   border-radius: 15px;
+    //   height: 6rem;
+    //   width: 20rem;
+    // }
+
+  }
+}
+
+.accountEdit-profil-inputs {
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: vars.$lightColorOpacity;
+  border-radius: 15px;
+  flex-grow: 3;
+  align-items: center;
+  height: 100%;
+  min-width: 230px;
+  padding: 1rem;
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+  .accountEdit {
+    & h2 {
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+
+    &-profil-inputs{
+      & .input{
+        width:150px
+      }
+    }
+    & .label{
+      width: 200px;
+    }
+    .profil {
+      padding: 0.5rem;
+    }
+
+    .reminders {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+
+
+
+      &-item {
+        max-width: 10rem;
+        min-width: 10rem;
+        height: 13rem;
+
+        &-header {
+          display: none;
+        }
+
+        &-main {
+          padding: 0.5rem;
+
+          & h3 {
+            text-transform: lowercase;
+            padding-bottom: 1rem;
+          }
+        }
+
+        &-description-text {
+          margin: 0;
+          padding: 0.5rem;
+          height: 53px;
+
+          &:last-child {
+            height: 30px;
+          }
+        }
+      }
+
+      &-button {
+        width: 100%;
+        box-shadow: none;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 0;
+
+        &::after {
+          content: "Supprimer";
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  // .myCompanions h2 {
+  //   font-size: 1.4rem;
+  // }
+
+  // Partie centre de la page comprenant les compagnons 
+  //ajouté au préalable dans la partie compagnons du compte
+  .companions {
+    list-style-type: none;
+
+
+
+  }
+}

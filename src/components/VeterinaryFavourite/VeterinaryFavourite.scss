@@ -1,0 +1,67 @@
+@use 'src/styles/vars';
+
+.veterinary-favourite-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  flex-wrap: wrap;
+
+  & h3 {
+    font-size: 1.3rem;
+    white-space: pre-wrap;
+    margin: 1rem;
+  }
+}
+
+.veterinary-favourite {
+  background-color: vars.$mediumColor;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 312px;
+}
+
+.avatar-name {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.veterinary-categories {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & hr {
+    width: 4rem;
+    margin: 2rem
+  }
+}
+
+.veterinary-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.account-description {
+  margin: 0;
+}

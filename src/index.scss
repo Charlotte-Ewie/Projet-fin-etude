@@ -1,0 +1,26 @@
+@use '/src/styles/vars';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: vars.$lightColor;
+  font-family: vars.$font, sans-serif;
+  z-index: -1;
+  /* Déplacez l'élément en arrière-plan */
+  overflow: visible;
+  min-width: 320px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$policeColor;
+}

@@ -1,0 +1,132 @@
+@use 'src/styles/vars';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: url('/images/dogHome.jpg') no-repeat center/cover;
+  flex-grow: 2;
+
+  & h2 {
+    color: vars.$lightColor;
+    margin-top: 5rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+
+  }
+}
+
+#animated {
+  width: 30rem;
+}
+
+.signin-form-container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+  width: 100vw;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(vars.$lightColor, 0.6);
+  border-radius: 10px;
+  height: 25rem;
+
+  & input {
+    width: 18rem;
+  }
+}
+
+.button {
+  background-color: vars.$color;
+  color: vars.$policeColor;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: vars.$font;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.95);
+
+
+  &-connexion {
+    margin: 2rem 0rem;
+    color: vars.$lightColor;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    width: 18rem;
+    text-transform: uppercase;
+  }
+
+  &-subscribe {
+    margin-top: 20px;
+    padding: 0.6rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    background-color: vars.$color;
+    color: vars.$lightColor;
+
+    &:hover {
+      color: vars.$color;
+      background-color: vars.$mediumColor;
+      cursor: pointer;    
+    }
+  }
+}
+
+hr {
+  border: solid 1px vars.$color;
+  width: 60%;
+}
+
+.advertising-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.partner-title {
+  color: vars.$lightColor;
+  margin-top: 1rem;
+  padding: 0 0 2rem;
+}
+
+#card {
+  width: 22rem;
+  height: 30rem;
+  border-radius: 10px;
+  background-color: rgba(vars.$lightColor, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.95);
+
+}
+
+.card-img {
+  width: 20rem;
+  height: 10rem;
+}
+
+.description {
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+  text-align: center;
+  color: vars.$policeColor;
+}
+
+h5 {
+  font-style: italic;
+  text-decoration: underline;
+  
+}

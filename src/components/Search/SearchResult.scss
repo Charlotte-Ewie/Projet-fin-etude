@@ -1,0 +1,54 @@
+@use 'src/styles/vars';
+
+.result {
+  width: 100%;
+}
+
+.result-veterinary-search {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 3px solid vars.$color;
+  width: 100%;
+  gap: 1.5rem;
+
+  & .avatar {
+    width: 100px;
+
+    &-name {
+      margin: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+.result-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 260px;
+  height: 100px;
+
+  & .account-description {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 25px;
+  }
+
+
+  .component-search {
+    background: vars.$lightColor;
+  }  
+}
+
+.badSearch{
+  font-size: 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}

@@ -1,0 +1,20 @@
+@use 'src/styles/vars';
+
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-404 {
+  height: 80rem;
+}
+
+.p-404 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: vars.$policeColor;
+  margin: 2rem;
+}

@@ -1,0 +1,50 @@
+@use 'src/styles/vars';
+
+.view-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: url('/images/teambg.jpg') no-repeat center/cover;
+  flex-grow: 2;
+}
+
+.view-team-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+  align-items: center;
+  width: 100vw;
+  flex-grow: 3;
+  flex-wrap: wrap;
+}
+.view-team-title {
+font-size: 3rem;
+padding-top: 1rem;
+;
+}
+.view-team-card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  background-color: rgba(vars.$lightColor, 0.6);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90vh;
+
+}
+
+.view-team-container-card {
+  text-align: center;
+  font-size: 1.4rem;
+
+}
+.view-team-role {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+

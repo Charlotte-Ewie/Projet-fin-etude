@@ -1,0 +1,146 @@
+@use 'src/styles/vars';
+
+
+.myMemo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-memo {
+  width: 70vw;
+  font-weight: bolder;
+  height: 30vh;
+  margin: 1rem;
+}
+
+.icon-memo {
+  width: 30px;
+}
+
+.label-memo {
+  font-weight: bolder;
+}
+
+.form-companion {
+  flex-grow: 3;
+  // height: 360px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.form-header {
+  margin-top: 1rem;
+}
+
+.form-content {
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-grow: 3;
+  height: 360px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.companion {
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.delete-button {
+  background-color: vars.$color;
+  color: vars.$policeColor;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: vars.$font;
+  margin-top: 20px;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  background-color: vars.$color;
+  color: vars.$lightColor;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+
+  &:hover {
+    color: vars.$color;
+    background-color: vars.$mediumColor;
+    cursor: pointer;
+  }
+}
+
+// screen mobile
+@media (max-width: 768px) {
+  .account {
+    & h2 {
+      font-size: 1.8rem;
+      padding: 1rem;
+    }
+
+    .reminders {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+
+
+
+      &-item {
+        max-width: 10rem;
+        min-width: 10rem;
+        height: 13rem;
+
+        &-header {
+          display: none;
+        }
+
+        &-main {
+          padding: 0.5rem;
+
+          & h3 {
+            text-transform: lowercase;
+            padding-bottom: 1rem;
+          }
+        }
+
+        &-description-text {
+          margin: 0;
+          padding: 0.5rem;
+          height: 53px;
+
+          &:last-child {
+            height: 30px;
+          }
+        }
+      }
+
+      &-button {
+        width: 100%;
+        box-shadow: none;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 0;
+
+        &::after {
+          content: "Supprimer";
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

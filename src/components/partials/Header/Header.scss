@@ -1,0 +1,84 @@
+// NavBar - Header
+@use '/src/styles/vars';
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  color: black;
+  height: 5rem;
+
+  &-nav {
+    display: flex;
+    justify-content: center;
+
+    &-a {
+      padding: 0 1rem;
+
+      &-view {
+        font-size: 1rem;
+        color: vars.$color;
+        padding-right: 2rem;
+        font-weight: bold;
+      }
+
+      & img {
+        width: 30px;
+      }
+    }
+  }
+
+  & .header-button {
+    margin: 0;
+  }
+}
+.app-header-logo {
+  display: flex;
+
+}
+.app-header-icon {
+  width: 32px;
+  height: 32px;
+  padding-left: 2px;
+
+}
+
+.header-button {
+  background-color: vars.$color;
+  color: vars.$policeColor;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: vars.$font;
+  margin-top: 20px;
+  padding: 0.6rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  background-color: vars.$color;
+  color: vars.$lightColor;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+
+  &:hover {
+    color: vars.$color;
+    background-color: vars.$mediumColor;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-header-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .app-header-nav-a-view {
+    display: none;
+  }
+
+  .header-button {
+    font-size: 0.8rem;
+  }
+}
